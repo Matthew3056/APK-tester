@@ -1,0 +1,12 @@
+{
+  "name": "website-apk-scanner",
+  "version": "1.0.0",
+  "description": "Website APK-scanner voor Digiwerkplaats Rijnmond",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/run-fixture.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": { "cheerio": "^1.0.0" }
+}

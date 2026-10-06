@@ -1,0 +1,1428 @@
+{
+  "meta": {
+    "scannedAt": "2026-10-06T09:37:47.305Z",
+    "durationSec": 6,
+    "input": {
+      "url": "https://www.nu.nl/",
+      "name": "nu",
+      "place": "Hoofddorp"
+    },
+    "finalUrl": "https://myprivacy.dpgmedia.nl/consent?siteKey=ucf98legs1caotgh&callbackUrl=https%3A%2F%2Fwww.nu.nl%2Fprivacy-gate%2Faccept%3FredirectUri%3D%252F&isLoggedIn=false",
+    "pages": [
+      "https://myprivacy.dpgmedia.nl/consent?siteKey=ucf98legs1caotgh&callbackUrl=https%3A%2F%2Fwww.nu.nl%2Fprivacy-gate%2Faccept%3FredirectUri%3D%252F&isLoggedIn=false"
+    ],
+    "cms": null,
+    "fonts": [
+      "Tebuche MS"
+    ],
+    "colors": [
+      "#f5f5f5",
+      "#fff",
+      "#b4b4b4"
+    ],
+    "psi": null,
+    "psiError": "PageSpeed gaf status 429 (te veel aanvragen; zet een gratis PSI_API_KEY in .env)",
+    "aiNote": "AI uit (geen ANTHROPIC_API_KEY ingesteld): open vragen en klantreis zijn skeletten die je zelf invult.",
+    "warnings": [],
+    "linkCheck": {
+      "checked": 1,
+      "broken": 0
+    },
+    "avg": "Alleen openbare websitecontent is gebruikt. Geen persoonsgegevens, geen formulieren verstuurd."
+  },
+  "expectations": {
+    "verw_3klikken": "nieuws zien",
+    "verw_homepage": "hoofd artikel van de dag",
+    "pos_eerste_indruk": "overzichtelijk"
+  },
+  "sections": [
+    {
+      "id": "verw",
+      "title": "1. Verwachtingen vooraf",
+      "doel": "Vaststellen wat een gebruiker verwacht voordat hij de website echt gaat beoordelen. Dit helpt om later te vergelijken of de website aan die verwachtingen voldoet.",
+      "aanvulling": false,
+      "vooraf": true,
+      "questions": [
+        {
+          "id": "verw_3klikken",
+          "text": "Wat wil je binnen 3 klikken kunnen doen? (bijv. contact opnemen, bestellen, informatie vinden)",
+          "type": "open",
+          "answer": "nieuws zien",
+          "confidence": "zeker",
+          "evidence": "Dit is jouw eigen antwoord, ingevuld vóór de scan.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "verw_homepage",
+          "text": "Welke informatie verwacht je direct op de homepage te zien?",
+          "type": "open",
+          "answer": "hoofd artikel van de dag",
+          "confidence": "zeker",
+          "evidence": "Dit is jouw eigen antwoord, ingevuld vóór de scan.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        }
+      ]
+    },
+    {
+      "id": "pos",
+      "title": "2. Eerste indruk & positionering",
+      "doel": "Beoordelen of bezoekers direct begrijpen wat het bedrijf doet en voor wie de website bedoeld is.",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "pos_eerste_indruk",
+          "text": "Wat is je eerste indruk?",
+          "type": "open",
+          "answer": "overzichtelijk",
+          "confidence": "zeker",
+          "evidence": "Dit is jouw eigen antwoord, ingevuld vóór de scan.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "pos_taak_3_klikken",
+          "text": "Is het gelukt om die taak binnen 3 klikken uit te voeren?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Probeer zelf je taak (uit onderdeel 1) uit te voeren en tel de klikken.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "pos_doelgroep",
+          "text": "Voor wie is deze website bedoeld (doelgroep)?",
+          "type": "open",
+          "answer": "iedereen",
+          "confidence": "handmatig",
+          "evidence": "Aanwijzingen: hoofdkop \"\"; omschrijving \"\". Bedenk wie dit aanspreekt.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "pos_content_actueel",
+          "text": "Is de content actueel en relevant voor de doelgroep?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Geen datums of jaartallen gevonden. Kijk zelf naar nieuws, blog, aanbod en prijzen: is alles nog actueel?",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "pos_omschrijving",
+          "text": "Hoe zou je dit bedrijf omschrijven na het bekijken van de website?",
+          "type": "open",
+          "answer": "betrouwbaar",
+          "confidence": "handmatig",
+          "evidence": "Aanwijzingen: paginatitel \"DPG Media Privacy Gate\"; hoofdkop \"\".",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "pos_type_klant",
+          "text": "Voor welk type klant denk je dat dit bedrijf bedoeld is?",
+          "type": "open",
+          "answer": "iedereen",
+          "confidence": "handmatig",
+          "evidence": "Particulier of zakelijk? Kijk naar taalgebruik, prijzen en voorbeelden op de site.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "pos_score",
+          "text": "SCORE EERSTE INDRUK & POSITIONERING",
+          "type": "score10",
+          "answer": 8,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 4,
+            "confidence": "onzeker",
+            "rationale": [
+              "✘ Duidelijke hoofdkop op de homepage",
+              "✘ Korte omschrijving voor Google aanwezig",
+              "✘ Bedrijfsnaam in de paginatitel",
+              "Gebaseerd op 3 van 9 punten die de scanner kan meten. Omdat dat maar een deel is, ligt het voorstel dichter bij het midden. De rest (design, gevoel, teksten) beoordeel jij zelf."
+            ]
+          },
+          "suggested": 4
+        }
+      ]
+    },
+    {
+      "id": "ui",
+      "title": "3. Uitstraling & huisstijl",
+      "doel": "Beoordelen hoe professioneel en consistent de website eruitziet.",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "ui_design",
+          "text": "Hoe professioneel oogt het design van de website?",
+          "type": "score10",
+          "answer": 9,
+          "confidence": "handmatig",
+          "evidence": "Visuele indruk: beoordeel zelf in je browser (laptop én telefoon). Een scanner ziet geen design.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null,
+          "suggested": null
+        },
+        {
+          "id": "ui_huisstijl",
+          "text": "Is de huisstijl consistent (kleurgebruik, logo, branding)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Beoordeel zelf. Hulpmiddel: meest gebruikte kleuren in de CSS: #f5f5f5 #fff #b4b4b4; lettertypes: Tebuche MS.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ui_logo",
+          "text": "Is het logo zichtbaar?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "waarschijnlijk",
+          "evidence": "Logo-element gevonden (modal__header__logo). Kijk even of het ook echt goed zichtbaar is.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ui_lettertype",
+          "text": "Is het lettertype duidelijk en goed leesbaar?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Beoordeel de leesbaarheid zelf. Gevonden lettertypes: Tebuche MS.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ui_beeld",
+          "text": "Welk beeld krijg je van het bedrijf op basis van de homepage?",
+          "type": "open",
+          "answer": "professioneel nieuws geright",
+          "confidence": "handmatig",
+          "evidence": "Wat voor beeld krijg je van het bedrijf (modern, betrouwbaar, lokaal, goedkoop…)? Beschrijf het in eigen woorden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ui_balans",
+          "text": "Is er een goede balans tussen tekst en beeld?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "onzeker",
+          "evidence": "Bijna geen tekst (0 woorden) bij 1 afbeeldingen. Dit is een cijfermatige schatting: kijk zelf of het prettig oogt.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ui_overzicht",
+          "text": "Is de website overzichtelijk en niet rommelig?",
+          "type": "score5",
+          "labels": [
+            "Zeer rommelig",
+            "Zeer overzichtelijk"
+          ],
+          "answer": 5,
+          "confidence": "onzeker",
+          "evidence": "Aanwijzingen voor drukte: bijna geen inhoud.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null,
+          "suggested": 3
+        },
+        {
+          "id": "ui_score",
+          "text": "SCORE UITSTRALING & HUISSTIJL",
+          "type": "score10",
+          "answer": 8,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 6,
+            "confidence": "onzeker",
+            "rationale": [
+              "✘ Is er een goede balans tussen tekst en beeld?",
+              "~ Is de website overzichtelijk en niet rommelig?",
+              "✔ Is het logo zichtbaar?",
+              "Gebaseerd op 3 van 7 punten die de scanner kan meten. Omdat dat maar een deel is, ligt het voorstel dichter bij het midden. De rest (design, gevoel, teksten) beoordeel jij zelf."
+            ]
+          },
+          "suggested": 6
+        }
+      ]
+    },
+    {
+      "id": "ux",
+      "title": "4. Gebruiksvriendelijkheid",
+      "doel": "Beoordelen hoe makkelijk bezoekers door de website kunnen navigeren.",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "ux_header",
+          "text": "Is de header duidelijk en informatief?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "onzeker",
+          "evidence": "Geen <header>-onderdeel gevonden (de site kan het anders hebben opgebouwd).",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_menu",
+          "text": "Is er een menu aanwezig?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "onzeker",
+          "evidence": "Geen menu in de HTML gevonden (kan via JavaScript geladen worden).",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_menustructuur",
+          "text": "Is de menustructuur logisch opgebouwd?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Geen menu uit de HTML te lezen: beoordeel de menustructuur zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_hamburger",
+          "text": "Is er een hamburgermenu (mobiel)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee",
+            "niet van toepassing"
+          ],
+          "answer": "ja",
+          "confidence": "onzeker",
+          "evidence": "Geen hamburgermenu gevonden in de code. Maak je browservenster smal om te zien hoe het menu op mobiel werkt.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_footer",
+          "text": "Is er een duidelijke footer met contactinformatie?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen footer gevonden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_voorwaarden",
+          "text": "Zijn voorwaarden (retour/annulering/algemene voorwaarden) makkelijk vindbaar?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee",
+            "niet van toepassing"
+          ],
+          "answer": "niet van toepassing",
+          "confidence": "onzeker",
+          "evidence": "Geen voorwaarden gevonden en geen webshop herkend. Heeft het bedrijf wel algemene voorwaarden voor diensten? Dan is \"nee\" passend.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_zoek",
+          "text": "Is er een zoekfunctie aanwezig en bruikbaar?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen zoekveld gevonden. Bij een kleine website is dat vaak ook niet nodig.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_breadcrumbs",
+          "text": "Zijn breadcrumbs aanwezig (weet je waar je bent op de site)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen broodkruimelpad gevonden op 1 gescande pagina('s).",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_toegankelijk",
+          "text": "Is de website toegankelijk/inclusief (bijv. contrast, alternatieve teksten)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "onzeker",
+          "evidence": "alt-teksten: 100% van 1 afbeeldingen; taal ingesteld: ja (nl); hoofdgebied (<main>): nee; formuliervelden met label: geen velden. Kleurcontrast is niet gemeten: controleer dat zelf (bijv. met een contrast-checker).",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_aanbod",
+          "text": "Begrijp je direct wat het bedrijf aanbiedt?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Begrijp je het binnen 5 seconden? Hulpmiddel: hoofdkop \"\".",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_prijzen",
+          "text": "Zijn prijzen of voldoende transparante prijsindicaties aanwezig?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen prijzen of bedragen gevonden op de gescande pagina's.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_openingstijden",
+          "text": "Zijn openingstijden duidelijk vermeld (indien relevant)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee",
+            "niet van toepassing"
+          ],
+          "answer": "niet van toepassing",
+          "confidence": "onzeker",
+          "evidence": "Geen openingstijden gevonden. Heeft het bedrijf geen vaste tijden of is het alleen online? Kies dan \"niet van toepassing\".",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_contact",
+          "text": "Kun je zonder te zoeken snel een contactmogelijkheid vinden?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen contactlink, telefoonnummer of e-mailadres gevonden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ux_score",
+          "text": "SCORE GEBRUIKSVRIENDELIJKHEID (UX)",
+          "type": "score10",
+          "answer": 8,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 3,
+            "confidence": "waarschijnlijk",
+            "rationale": [
+              "✘ Is er een menu aanwezig?",
+              "✘ Is er een duidelijke footer met contactinformatie?",
+              "✘ Zijn prijzen of voldoende transparante prijsindicaties aanwezig?",
+              "✘ Kun je zonder te zoeken snel een contactmogelijkheid vinden?",
+              "✘ Is de header duidelijk en informatief?",
+              "✘ Zijn openingstijden duidelijk vermeld ?",
+              "~ Is er een hamburgermenu ?",
+              "~ Zijn breadcrumbs aanwezig ?",
+              "~ Is er een zoekfunctie aanwezig en bruikbaar?",
+              "✔ Is de website toegankelijk/inclusief ?",
+              "Gebaseerd op 10 van 13 punten die de scanner kan meten. Omdat dat maar een deel is, ligt het voorstel dichter bij het midden. De rest (design, gevoel, teksten) beoordeel jij zelf."
+            ]
+          },
+          "suggested": 3
+        }
+      ]
+    },
+    {
+      "id": "cv",
+      "title": "5. Conversie & actiegerichtheid",
+      "doel": "Beoordelen of de website bezoekers stimuleert om actie te ondernemen.",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "cv_actie_zichtbaar",
+          "text": "Is de belangrijkste actie (bijv. afspraak maken/bestellen/contact opnemen) direct zichtbaar op de homepage?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen duidelijke actieknop gevonden (zoals \"offerte aanvragen\" of \"bel ons\").",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "cv_actie_direct",
+          "text": "Kun je deze actie direct uitvoeren?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Voer de actie zelf uit (bijv. tot aan het invullen van het formulier). Lukt het zonder omwegen?",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "cv_cta",
+          "text": "Bevat de website duidelijke call-to-actions (CTA's)? Welke?",
+          "type": "open",
+          "answer": "Geen duidelijke call-to-actions gevonden.",
+          "confidence": "onzeker",
+          "evidence": "Controleer zelf of er knoppen zijn die niet als zodanig herkend zijn.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "cv_gestimuleerd",
+          "text": "Word je gestimuleerd om actie te ondernemen?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "gedeeltelijk",
+          "confidence": "onzeker",
+          "evidence": "0 verschillende actie-teksten gevonden. Of je je echt aangespoord voelt, beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "cv_contactmiddelen",
+          "text": "Via welke middelen kun je contact opnemen met dit bedrijf?",
+          "type": "multi",
+          "options": [
+            "telefoon",
+            "e-mail",
+            "contactformulier",
+            "chatbot",
+            "whatsapp",
+            "anders"
+          ],
+          "answer": [],
+          "confidence": "onzeker",
+          "evidence": "Geen contactmiddelen herkend.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "cv_bereikbaar",
+          "text": "Wordt duidelijk aangegeven op welke dagen en tijden het bedrijf bereikbaar is?",
+          "type": "open",
+          "answer": "Niet gevonden: er staat geen duidelijke vermelding van dagen en tijden.",
+          "confidence": "onzeker",
+          "evidence": "Geen openingstijden of bereikbaarheidstijden in de tekst herkend.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "cv_score",
+          "text": "SCORE CONVERSIE & ACTIEGERICHTHEID",
+          "type": "score10",
+          "answer": 7,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 3,
+            "confidence": "onzeker",
+            "rationale": [
+              "✘ Is de belangrijkste actie direct zichtbaar op de homepage?",
+              "✘ Word je gestimuleerd om actie te ondernemen?",
+              "✘ Via welke middelen kun je contact opnemen met dit bedrijf?",
+              "Gebaseerd op 3 van 6 punten die de scanner kan meten. Omdat dat maar een deel is, ligt het voorstel dichter bij het midden. De rest (design, gevoel, teksten) beoordeel jij zelf."
+            ]
+          },
+          "suggested": 3
+        }
+      ]
+    },
+    {
+      "id": "ee",
+      "title": "6. Contentkwaliteit & E-E-A-T",
+      "doel": "De kwaliteit en betrouwbaarheid van de content beoordelen (Experience, Expertise, Authoritativeness, Trust).",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "ee_formulier",
+          "text": "Is er een contactformulier?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen contactformulier gevonden op de gescande pagina's.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ee_formulier_werkt",
+          "text": "Werkt het contactformulier correct (incl. bevestiging/kopie)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee",
+            "niet getest"
+          ],
+          "answer": "niet getest",
+          "confidence": "handmatig",
+          "evidence": "De scanner verstuurt NOOIT formulieren (er zouden echte berichten bij de ondernemer binnenkomen). Wil je het testen, doe dat dan zelf met een duidelijk testbericht.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ee_reviews",
+          "text": "Zijn er reviews, testimonials of keurmerken aanwezig?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen reviews, testimonials of keurmerken herkend.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ee_autoriteit",
+          "text": "Komt het bedrijf over als een autoriteit in de branche?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "onzeker",
+          "evidence": "Geen signalen van deskundigheid gevonden (certificaten, ervaring, referenties, media).",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ee_betrouwbaarheid",
+          "text": "Vergroot dit de betrouwbaarheid?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "onzeker",
+          "evidence": "Betrouwbaarheidssignalen: HTTPS (1 van 8).",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ee_onderscheid",
+          "text": "Onderscheidt dit bedrijf zich van concurrenten? Waarom?",
+          "type": "open",
+          "answer": "ja want het is heel Nederland niews",
+          "confidence": "handmatig",
+          "evidence": "Wat maakt dit bedrijf anders dan concurrenten in dezelfde plaats/branche? Zoek naar een eigen verhaal, specialisatie of belofte (USP).",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ee_professioneel",
+          "text": "In hoeverre komt de inhoud van de website professioneel en betrouwbaar over?",
+          "type": "score10",
+          "answer": 8,
+          "confidence": "onzeker",
+          "evidence": "Alleen een grove schatting uit betrouwbaarheidssignalen en toegankelijkheid. Lees de teksten zelf: kloppen ze, zijn er taalfouten, voelt het professioneel?",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null,
+          "suggested": 5
+        },
+        {
+          "id": "ee_persoonlijk",
+          "text": "Komt het bedrijf persoonlijk en authentiek over in de teksten en beelden?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "onzeker",
+          "evidence": "Geen over-ons pagina gevonden; 0 keer \"wij/ik/ons\" per 1000 woorden. Kijk ook of er echte foto's van mensen zijn.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ee_score",
+          "text": "SCORE CONTENTKWALITEIT & E-E-A-T",
+          "type": "score10",
+          "answer": 5,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 2,
+            "confidence": "waarschijnlijk",
+            "rationale": [
+              "✘ Zijn er reviews, testimonials of keurmerken aanwezig?",
+              "✘ Komt het bedrijf over als een autoriteit in de branche?",
+              "✘ Vergroot dit de betrouwbaarheid?",
+              "✘ Komt het bedrijf persoonlijk en authentiek over in de teksten en beelden?",
+              "✘ Is er een contactformulier?",
+              "Gebaseerd op 5 van 8 punten die de scanner kan meten. Omdat dat maar een deel is, ligt het voorstel dichter bij het midden. De rest (design, gevoel, teksten) beoordeel jij zelf."
+            ]
+          },
+          "suggested": 2
+        }
+      ]
+    },
+    {
+      "id": "te",
+      "title": "7. Technische basis",
+      "doel": "Beoordelen of de website technisch goed functioneert.",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "te_social_door",
+          "text": "Wordt er vanaf de website doorgelinkt naar social media?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "waarschijnlijk",
+          "evidence": "Geen links naar social media gevonden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_social_terug",
+          "text": "Linken socialmediakanalen terug naar de website?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee",
+            "onbekend"
+          ],
+          "answer": "onbekend",
+          "confidence": "handmatig",
+          "evidence": "Social media-platforms zijn niet automatisch uit te lezen. Open de kanalen en kijk of de website in de bio staat.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_social_actief",
+          "text": "Zijn de socialmediakanalen actief en up-to-date?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee",
+            "gedeeltelijk"
+          ],
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Kijk per kanaal naar de datum van het laatste bericht.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_google",
+          "text": "Hoe snel komt het bedrijf naar voren bij zoeken op bedrijfsnaam in Google?",
+          "type": "score10",
+          "answer": 10,
+          "confidence": "handmatig",
+          "evidence": "Zoek op de bedrijfsnaam (plus plaats) in Google, in een privévenster. Staat de eigen website bovenaan? Gebruik de zoeklink onder \"Handmatige hulpmiddelen\".",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null,
+          "suggested": null
+        },
+        {
+          "id": "te_snel",
+          "text": "Laadt de website snel (binnen 3 seconden)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "onzeker",
+          "evidence": "Eigen meting: server reageert na 901ms, pagina binnen na 910ms (8 KB HTML, 1 scripts). Dit is niet de echte laadtijd in een browser: test zelf op pagespeed.web.dev.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_responsive",
+          "text": "Werkt de website goed op mobiel én laptop (responsive)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "onzeker",
+          "evidence": "viewport-instelling: ja; CSS-regels voor verschillende schermbreedtes: 3. Controleer zelf op je telefoon of in je browser met F12 → apparaat-weergave.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_https",
+          "text": "Is de website beveiligd met HTTPS?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "zeker",
+          "evidence": "De website draait op https met een geldig certificaat.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_cookie",
+          "text": "Is er een duidelijke cookie-melding?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "onzeker",
+          "evidence": "Geen cookiemelding in de code gevonden, terwijl er wel meetcode (zoals Google Analytics of Facebook-pixel) op staat. Meldingen worden soms pas na het laden getoond: open de site in een privévenster om het te zien.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_fouten",
+          "text": "Zijn er zichtbare technische fouten of problemen?",
+          "type": "single",
+          "options": [
+            "enkele",
+            "meerdere",
+            "geen"
+          ],
+          "answer": "geen",
+          "confidence": "waarschijnlijk",
+          "evidence": "Steekproef van 1 links/afbeeldingen. Geen fouten gevonden. Fouten die pas in de browser optreden (zoals JavaScript-fouten) ziet de scanner niet: klik zelf even rond.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_beste",
+          "text": "Wat werkt het beste aan deze website?",
+          "type": "open",
+          "answer": "De website is beveiligd met HTTPS (het slotje in de adresbalk).",
+          "confidence": "onzeker",
+          "evidence": "Gekozen uit het sterkste meetpunt. Beoordeel zelf wat het beste werkt.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "te_score",
+          "text": "SCORE TECHNISCHE BASIS",
+          "type": "score10",
+          "answer": 10,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 8,
+            "confidence": "waarschijnlijk",
+            "rationale": [
+              "✘ Is er een duidelijke cookie-melding?",
+              "✘ Wordt er vanaf de website doorgelinkt naar social media?",
+              "✔ Laadt de website snel ?",
+              "✔ Werkt de website goed op mobiel én laptop ?",
+              "✔ Is de website beveiligd met HTTPS?",
+              "✔ Zijn er zichtbare technische fouten of problemen?",
+              "Gebaseerd op 6 van 10 punten die de scanner kan meten. Omdat dat maar een deel is, ligt het voorstel dichter bij het midden. De rest (design, gevoel, teksten) beoordeel jij zelf."
+            ]
+          },
+          "suggested": 8
+        }
+      ]
+    },
+    {
+      "id": "sr",
+      "title": "7b. Social, reviews, SEO & GEO",
+      "doel": "Aanvulling vanuit de briefing (niet in het Google-formulier): vindbaarheid in Google, zichtbaarheid in AI-antwoorden (GEO), social media en reviews.",
+      "aanvulling": true,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "sr_title",
+          "text": "Heeft de homepage een goede paginatitel?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "gedeeltelijk",
+          "confidence": "zeker",
+          "evidence": "\"DPG Media Privacy Gate\" (22 tekens; ideaal 30–60). Bedrijfsnaam ontbreekt.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_meta",
+          "text": "Is er een bruikbare omschrijving voor Google (meta description)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "zeker",
+          "evidence": "Geen meta description gevonden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_h1",
+          "text": "Heeft de homepage één duidelijke hoofdkop (H1)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "zeker",
+          "evidence": "Geen H1 gevonden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_index",
+          "text": "Mag Google de website indexeren (staat niet op \"noindex\"/geblokkeerd)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "zeker",
+          "evidence": "robots.txt blokkeert de hele site voor zoekmachines!",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_sitemap",
+          "text": "Is er een sitemap (sitemap.xml)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "zeker",
+          "evidence": "Geen sitemap.xml gevonden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_schema",
+          "text": "Zijn bedrijfsgegevens gestructureerd aangeleverd (schema.org / LocalBusiness)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "zeker",
+          "evidence": "Geen gestructureerde gegevens (schema.org) gevonden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_nap",
+          "text": "Staan bedrijfsnaam, vestigingsplaats en contactgegevens duidelijk op de site (NAP)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "waarschijnlijk",
+          "evidence": "Bedrijfsnaam ✘ · plaats \"Hoofddorp\" ✘ · telefoon ✘ · postcode/adres ✘",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_alt",
+          "text": "Hebben de afbeeldingen een alternatieve tekst?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "ja",
+          "confidence": "zeker",
+          "evidence": "1 van 1 afbeeldingen hebben een alt-tekst.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "geo_crawlers",
+          "text": "GEO: staan AI-zoekmachines toe om de website te lezen (robots.txt)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee",
+            "gedeeltelijk"
+          ],
+          "answer": "nee",
+          "confidence": "zeker",
+          "evidence": "Geblokkeerd in robots.txt: GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, anthropic-ai, OAI-SearchBot.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "geo_structuur",
+          "text": "GEO: is de content zo opgezet dat een AI er makkelijk antwoorden uit haalt (vraag-en-antwoord, duidelijke kopjes)?",
+          "type": "single",
+          "options": [
+            "ja",
+            "gedeeltelijk",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "onzeker",
+          "evidence": "Geen veelgestelde vragen gevonden; 0 tussenkopjes op de homepage.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "geo_llms",
+          "text": "GEO: is er een llms.txt? (nice-to-have, geen vereiste)",
+          "type": "single",
+          "options": [
+            "ja",
+            "nee"
+          ],
+          "answer": "nee",
+          "confidence": "zeker",
+          "evidence": "Geen llms.txt. Dit is een nieuwe, nog niet algemeen gebruikte afspraak: geen punt van zorg.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "geo_test",
+          "text": "GEO-test: wordt het bedrijf genoemd als je het aan ChatGPT / Gemini / Perplexity / Claude vraagt? (gebruik de promptkaart)",
+          "type": "open",
+          "answer": "ja",
+          "confidence": "handmatig",
+          "evidence": "Gebruik de GEO-promptkaart onder \"Handmatige hulpmiddelen\": stel de vragen aan ChatGPT, Gemini, Perplexity en Claude en noteer of het bedrijf genoemd wordt.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "rev_google",
+          "text": "Reviews & ratings: wat is de Google-beoordeling (aantal en gemiddelde), en wat zeggen de recente reviews?",
+          "type": "open",
+          "answer": "goede reviews",
+          "confidence": "handmatig",
+          "evidence": "Zoek het bedrijf in Google Maps/Google-zoeken (zie links onder \"Handmatige hulpmiddelen\") en noteer aantal reviews, gemiddelde en wat opvalt in recente reviews.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "soc_scorecard",
+          "text": "Social media scorecard: per kanaal volgers, laatste bericht en kwaliteit",
+          "type": "open",
+          "answer": "jub",
+          "confidence": "handmatig",
+          "evidence": "Geen social links op de website gevonden. Zoek zelf of het bedrijf toch ergens actief is.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "sr_score",
+          "text": "SCORE SOCIAL, REVIEWS, SEO & GEO",
+          "type": "score10",
+          "answer": 8,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 2,
+            "confidence": "waarschijnlijk",
+            "rationale": [
+              "✘ Is er een bruikbare omschrijving voor Google ?",
+              "✘ Heeft de homepage één duidelijke hoofdkop ?",
+              "✘ Mag Google de website indexeren ?",
+              "✘ Zijn bedrijfsgegevens gestructureerd aangeleverd ?",
+              "✘ Staan bedrijfsnaam, vestigingsplaats en contactgegevens duidelijk op de site ?",
+              "✘ GEO: staan AI-zoekmachines toe om de website te lezen ?",
+              "✘ GEO: is de content zo opgezet dat een AI er makkelijk antwoorden uit haalt ?",
+              "✘ Is er een sitemap ?",
+              "~ Heeft de homepage een goede paginatitel?",
+              "✔ GEO: is er een llms.txt?",
+              "✔ Hebben de afbeeldingen een alternatieve tekst?",
+              "Gebaseerd op 11 van 14 punten die de scanner kan meten. Omdat dat maar een deel is, ligt het voorstel dichter bij het midden. De rest (design, gevoel, teksten) beoordeel jij zelf."
+            ]
+          },
+          "suggested": 2
+        }
+      ]
+    },
+    {
+      "id": "gr",
+      "title": "8. Digitale groeikansen",
+      "doel": "Analyseren waar de website kan verbeteren.",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "gr_kans",
+          "text": "Wat is de grootste verbeterkans?",
+          "type": "single",
+          "options": [
+            "Content",
+            "Techniek",
+            "UX",
+            "Vindbaarheid",
+            "Conversie"
+          ],
+          "answer": "Conversie",
+          "confidence": "onzeker",
+          "evidence": "Laagste voorstel-score: Content 2 · Vindbaarheid 2 · UX 3 · Conversie 3 · Techniek 8.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "gr_doelen",
+          "text": "In hoeverre ondersteunt de website de bedrijfsdoelen?",
+          "type": "single",
+          "options": [
+            "Goed",
+            "Matig",
+            "Slecht"
+          ],
+          "answer": "Goed",
+          "confidence": "onzeker",
+          "evidence": "Afgeleid van het voorstel-eindcijfer (4). De scanner kent de bedrijfsdoelen niet: vraag of leid ze af uit de site.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "gr_score",
+          "text": "SCORE DIGITALE GROEIKANSEN",
+          "type": "score10",
+          "answer": 6,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 3,
+            "confidence": "onzeker",
+            "rationale": [
+              "Gemiddelde van conversie (3) en vindbaarheid/social/reviews (2).",
+              "Aanname: een hoge score betekent dat de ondernemer zijn digitale kansen al goed benut. Stem de betekenis af met je begeleider."
+            ]
+          },
+          "suggested": 3
+        }
+      ]
+    },
+    {
+      "id": "ei",
+      "title": "9. Eindbeoordeling",
+      "doel": "Het totaaloordeel, met drie sterke punten en drie verbeterpunten.",
+      "aanvulling": false,
+      "vooraf": false,
+      "questions": [
+        {
+          "id": "ei_score",
+          "text": "EINDSCORE WEBSITE APK",
+          "type": "score10",
+          "answer": 8,
+          "confidence": "handmatig",
+          "evidence": "Dit beoordeel je zelf.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": {
+            "value": 4,
+            "confidence": "onzeker",
+            "rationale": [
+              "Gewogen gemiddelde van de voorstel-cijfers per onderdeel (UX, conversie en techniek tellen zwaarder).",
+              "Het eindoordeel is jouw oordeel: pas het aan na het doorlopen van de hele analyse."
+            ]
+          },
+          "suggested": 4
+        },
+        {
+          "id": "ei_sterk",
+          "text": "Sterke punten (3)",
+          "type": "open",
+          "answer": "1. De website is beveiligd met HTTPS (het slotje in de adresbalk).\n2. Het logo is zichtbaar aanwezig, waardoor de website direct herkenbaar is.\n3. De website houdt er goed rekening mee dat iedereen hem kan gebruiken (alt-teksten, taal, labels).",
+          "confidence": "onzeker",
+          "evidence": "Voorstel uit de beste meetpunten. Herschrijf in je eigen woorden.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        },
+        {
+          "id": "ei_verbeter",
+          "text": "Verbeterpunten (3)",
+          "type": "open",
+          "answer": "1. Zoekmachines worden geblokkeerd: de website kan niet in Google verschijnen. Dit moet direct opgelost.\n2. Er is op de homepage geen duidelijke actieknop; vertel bezoekers wat ze nu moeten doen.\n3. Er is geen duidelijk menu te vinden, waardoor bezoekers moeilijk zien wat er nog meer op de site staat.",
+          "confidence": "onzeker",
+          "evidence": "Voorstel uit de zwakste meetpunten. Maak ze concreet en opbouwend.",
+          "ai": false,
+          "reviewed": true,
+          "proposal": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "sterke_punten": [
+      "De website is beveiligd met HTTPS (het slotje in de adresbalk).",
+      "Het logo is zichtbaar aanwezig, waardoor de website direct herkenbaar is.",
+      "De website houdt er goed rekening mee dat iedereen hem kan gebruiken (alt-teksten, taal, labels)."
+    ],
+    "verbeterpunten": [
+      "Zoekmachines worden geblokkeerd: de website kan niet in Google verschijnen. Dit moet direct opgelost.",
+      "Er is op de homepage geen duidelijke actieknop; vertel bezoekers wat ze nu moeten doen.",
+      "Er is geen duidelijk menu te vinden, waardoor bezoekers moeilijk zien wat er nog meer op de site staat."
+    ],
+    "persona": "beschrijf een typische klant — wie, wat wil die, wat houdt die tegen? Gebruik je antwoorden bij doelgroep en type klant.",
+    "klantreis": {
+      "bewustwording": "Hoe vind je het bedrijf? Titel ✔, omschrijving voor Google ✘, social: geen, bedrijfsgegevens voor Google ✘. ",
+      "overweging": "Wat helpt twijfelaars? Aanbod/diensten ✘, reviews of keurmerken ✘, signalen van deskundigheid: geen.",
+      "aankoop": "Hoe zet je de stap? Actieknoppen: geen, formulier ✘, webshop ✘.",
+      "loyaliteit": "Wat houdt klanten vast? Nieuwsbrief ✘, klantaccount ✘, social volgen ✘. ",
+      "aanbeveling": "Hoe verspreiden tevreden klanten het? Reviews ✘, social ✘, deelknoppen of review-verzoek: "
+    },
+    "kernboodschap": "Aanvullen",
+    "call_to_action": "er is geen duidelijke actie gevonden",
+    "contentadvies": "Op basis van de verbeterpunten: Zoekmachines worden geblokkeerd: de website kan niet in Google verschijnen. Dit moet direct opgelost. Er is op de homepage geen duidelijke actieknop; vertel bezoekers wat ze nu moeten doen. Er is geen duidelijk menu te vinden, waardoor bezoekers moeilijk zien wat er nog meer op de site staat.",
+    "bron": "regels",
+    "klantreisLabels": [
+      [
+        "bewustwording",
+        "Bewustwording"
+      ],
+      [
+        "overweging",
+        "Overweging"
+      ],
+      [
+        "aankoop",
+        "Aankoop"
+      ],
+      [
+        "loyaliteit",
+        "Loyaliteit"
+      ],
+      [
+        "aanbeveling",
+        "Aanbeveling"
+      ]
+    ]
+  },
+  "helpers": {
+    "links": [
+      {
+        "label": "Google: \"nu Hoofddorp\"",
+        "url": "https://www.google.com/search?q=nu%20Hoofddorp"
+      },
+      {
+        "label": "Google Maps (reviews en ratings)",
+        "url": "https://www.google.com/maps/search/nu%20Hoofddorp"
+      },
+      {
+        "label": "PageSpeed Insights (snelheid, mobiel)",
+        "url": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmyprivacy.dpgmedia.nl%2Fconsent%3FsiteKey%3Ducf98legs1caotgh%26callbackUrl%3Dhttps%253A%252F%252Fwww.nu.nl%252Fprivacy-gate%252Faccept%253FredirectUri%253D%25252F%26isLoggedIn%3Dfalse"
+      },
+      {
+        "label": "Wayback Machine (hoe oud is de site?)",
+        "url": "https://web.archive.org/web/*/https://myprivacy.dpgmedia.nl/consent?siteKey=ucf98legs1caotgh&callbackUrl=https%3A%2F%2Fwww.nu.nl%2Fprivacy-gate%2Faccept%3FredirectUri%3D%252F&isLoggedIn=false"
+      }
+    ],
+    "geoPrompts": [
+      "Wat doet nu in Hoofddorp? Wat weet je over dit bedrijf?",
+      "Welke bedrijven in Hoofddorp kun je aanbevelen voor [dienst of product van het bedrijf]? Noem er een paar en leg uit waarom.",
+      "Ik zoek [dienst of product] in de buurt van Hoofddorp. Wie raad je aan?",
+      "Wat zeggen klanten over nu in Hoofddorp? Zijn er goede of slechte ervaringen?",
+      "Wat zijn de openingstijden, het adres en de contactgegevens van nu?"
+    ]
+  },
+  "status": "gecontroleerd",
+  "summaryReviewed": true
+}
