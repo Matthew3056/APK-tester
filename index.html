@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website APK-scanner · Digiwerkplaats Rijnmond</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Website APK-scanner</h1>
+    <p class="sub">DigiwerkplaatsLab IT · Digiwerkplaats Rijnmond</p>
+  </div>
+  <span class="pill" id="aiPill">…</span>
+</header>
+
+<main>
+  <!-- STAP 1: starten -->
+  <section class="card" id="start">
+    <h2>1. Start een scan</h2>
+    <ol class="steps">
+      <li>Open de website zelf op je <b>laptop</b> en typ het adres handmatig in.</li>
+      <li><b>Scroll nog niet.</b> Beantwoord hieronder eerst je verwachting en je eerste indruk.</li>
+      <li>Start de scan. Daarna loop je alle onderdelen langs, <b>alsof je een echte klant bent</b>.</li>
+    </ol>
+
+    <form id="scanForm" autocomplete="off">
+      <div class="grid3">
+        <label>Website-adres (URL) *
+          <input name="url" required placeholder="www.voorbeeld.nl" inputmode="url">
+        </label>
+        <label>Bedrijfsnaam *
+          <input name="name" required placeholder="Bakkerij De Gouden Korst">
+        </label>
+        <label>Vestigingsplaats *
+          <input name="place" required placeholder="Rotterdam">
+        </label>
+      </div>
+
+      <h3>Vóór je de scan bekijkt <small>(verplicht, zoals in het formulier)</small></h3>
+      <label>Wat wil je binnen 3 klikken kunnen doen? <span class="muted">(bijv. contact opnemen, bestellen, informatie vinden)</span>
+        <textarea name="verw_3klikken" rows="2" required></textarea>
+      </label>
+      <label>Welke informatie verwacht je direct op de homepage te zien?
+        <textarea name="verw_homepage" rows="2" required></textarea>
+      </label>
+      <label>Wat is je eerste indruk?
+        <textarea name="pos_eerste_indruk" rows="2" required></textarea>
+      </label>
+
+      <label class="check"><input type="checkbox" name="usePsi" checked> Google PageSpeed gebruiken voor snelheid en mobiel <span class="muted">(duurt 20–40 sec extra, gratis)</span></label>
+
+      <p class="avg">🔒 <b>AVG:</b> de scanner leest alleen openbare websitepagina's. Er worden nooit formulieren verstuurd en er gaat geen persoonlijke of vertrouwelijke informatie in de tool. Vul hierboven dus ook niets persoonlijks in.</p>
+
+      <button class="primary" id="startBtn" type="submit">Scan starten</button>
+    </form>
+  </section>
+
+  <!-- STAP 2: voortgang -->
+  <section class="card" id="progress" hidden>
+    <h2><span class="spinner" id="spinner"></span> Bezig met scannen…</h2>
+    <ul id="logList" class="log"></ul>
+    <p class="err" id="scanError" hidden></p>
+    <button class="secondary" id="retryBtn" hidden>Opnieuw proberen</button>
+  </section>
+
+  <!-- STAP 3: controleren -->
+  <div id="results" hidden></div>
+</main>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-box">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+    <pre id="modalPre" hidden></pre>
+    <div class="row">
+      <button class="secondary" id="copyMd">Kopieer als tekst</button>
+      <button class="secondary" id="dlJson">Download JSON</button>
+      <button class="primary" id="closeModal">Sluiten</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
