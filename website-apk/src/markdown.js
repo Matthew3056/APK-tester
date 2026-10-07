@@ -1,45 +1,112 @@
 'use strict';
-/** Zet de bewaarde analyse om in leesbare tekst (om te kopiëren naar het formulier). */
-const CONF = { zeker: 'gemeten', waarschijnlijk: 'waarschijnlijk', onzeker: 'onzeker', handmatig: 'zelf ingevuld' };
 
-function fmt(q) {
-  const a = q.answer;
-  if (Array.isArray(a)) return a.length ? a.join(', ') : '(niets gekozen)';
-  if (a === null || a === undefined || a === '') return '(niet ingevuld)';
-  return String(a);
+/** Zet de bewaarde analyse om in leesbare tekst (om te kopiëren naar het formulier). */
+
+const CONF = {
+  zeker: 'gemeten',
+  waarschijnlijk: 'waarschijnlijk',
+  onzeker: 'onzeker',
+  handmatig: 'zelf ingevuld',
+};
+
+function formatAnswer(answer) {
+  if (Array.isArray(answer)) {
+    return answer.length ? answer.join(', ') : '(niets gekozen)';
+  }
+  if (answer === null || answer === undefined || answer === '') {
+    return '(niet ingevuld)';
+  }
+  return String(answer);
 }
 
-function toMarkdown(r) {
-  const m = r.meta || {};
-  const L = [];
-  L.push(`# Website APK: ${m.input?.name || ''} (${m.input?.place || ''})`);
-  L.push('');
-  L.push(`- Website: ${m.finalUrl || m.input?.url || ''}`);
-  L.push(`- Gescand op: ${m.scannedAt || ''}`);
-  L.push(`- Status: **${r.status === 'gecontroleerd' ? 'definitief (gecontroleerd)' : 'concept'}**`);
-  if (m.psi) L.push(`- PageSpeed (mobiel): prestaties ${Math.round((m.psi.performance ?? 0) * 100)}/100, toegankelijkheid ${Math.round((m.psi.accessibility ?? 0) * 100)}/100`);
-  L.push(`- ${m.aiNote || ''}`);
-  L.push('');
-  for (const s of r.sections || []) {
-    L.push(`## ${s.title}`);
-    L.push('');
-    for (const q of s.questions) {
-      L.push(`**${q.text}**`);
-      const ans = fmt(q).split('\n').map((x, i) => (i ? '  ' + x : x)).join('\n');
-      L.push(`- Antwoord: ${ans}`);
-      if (q.reviewed === false) L.push('- ⚠ Nog niet gecontroleerd');
-      L.push('');
+function formatMultilineAnswer(answer) {
+  return formatAnswer(answer)
+    .split('\n')
+    .map((line, index) => (index ? '  ' + line : line))
+    .join('\n');
+}
+
+function buildDocumentHeader(result, meta) {
+  const lines = [
+    `# Website APK: ${meta.input?.name || ''} (${meta.input?.place || ''})`,
+    '',
+    `- Website: ${meta.finalUrl || meta.input?.url || ''}`,
+    `- Gescand op: ${meta.scannedAt || ''}`,
+    `- Status: **${result.status === 'gecontroleerd' ? 'definitief (gecontroleerd)' : 'concept'}**`,
+  ];
+
+  if (meta.psi) {
+    lines.push(
+      `- PageSpeed (mobiel): prestaties ${Math.round((meta.psi.performance ?? 0) * 100)}/100, ` +
+        `toegankelijkheid ${Math.round((meta.psi.accessibility ?? 0) * 100)}/100`,
+    );
+  }
+
+  lines.push(`- ${meta.aiNote || ''}`, '');
+  return lines;
+}
+
+function buildQuestion(question) {
+  const lines = [`**${question.text}**`, `- Antwoord: ${formatMultilineAnswer(question.answer)}`];
+
+  if (question.reviewed === false) {
+    lines.push('- ⚠ Nog niet gecontroleerd');
+  }
+
+  lines.push('');
+  return lines;
+}
+
+function buildSections(sections) {
+  const lines = [];
+
+  for (const section of sections || []) {
+    lines.push(`## ${section.title}`, '');
+
+    for (const question of section.questions) {
+      lines.push(...buildQuestion(question));
     }
   }
-  const sm = r.summary || {};
-  L.push('## Persona, klantreis & contentadvies', '');
-  L.push(`**Persona:** ${sm.persona || ''}`, '');
-  L.push('**Klantreis:**');
-  for (const [k, label] of sm.klantreisLabels || []) L.push(`- ${label}: ${sm.klantreis?.[k] || ''}`);
-  L.push('', `**Kernboodschap:** ${sm.kernboodschap || ''}`, '');
-  L.push(`**Call-to-action:** ${sm.call_to_action || ''}`, '');
-  L.push(`**Contentadvies:** ${sm.contentadvies || ''}`, '');
-  return L.join('\n');
+
+  return lines;
+}
+
+function buildCustomerJourney(summary) {
+  const lines = [
+    '## Persona, klantreis & contentadvies',
+    '',
+    `**Persona:** ${summary.persona || ''}`,
+    '',
+    '**Klantreis:**',
+  ];
+
+  for (const [key, label] of summary.klantreisLabels || []) {
+    lines.push(`- ${label}: ${summary.klantreis?.[key] || ''}`);
+  }
+
+  lines.push(
+    '',
+    `**Kernboodschap:** ${summary.kernboodschap || ''}`,
+    '',
+    `**Call-to-action:** ${summary.call_to_action || ''}`,
+    '',
+    `**Contentadvies:** ${summary.contentadvies || ''}`,
+    '',
+  );
+
+  return lines;
+}
+
+function toMarkdown(result) {
+  const meta = result.meta || {};
+  const summary = result.summary || {};
+  const lines = [
+    ...buildDocumentHeader(result, meta),
+    ...buildSections(result.sections),
+    ...buildCustomerJourney(summary),
+  ];
+
+  return lines.join('\n');
 }
 
 module.exports = { toMarkdown, CONF };
